@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div class="options">
+        <div class="speed">
+            <p class="speed-text">Change speed</p>
+            <select class="speed-value">
+                <option value="slow">slow</option>
+                <option value="normal" selected>normal</option>
+                <option value="fast">fast</option>
+            </select>
+        </div>
+        <div class="color">
+            <p class="color-text">Snake color</p>
+            <input type="color" value="#5b34eb" class="color-value">
+        </div>
+    </div>
+    <div class="score-view">
+        <button class="start-game">START RESET</button>
+        <button class="reset-game">STOP GAME</button>
+        <p class="score">Score: <span>0</span></p>
+    </div>
+    <div class="game-box">
+        <canvas class="game" width="400" height="400"></canvas>
+        <div class="top-score">
+            <h2 class="top">Top score:</h2>
+            <ol class="top-list"></ol>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__github">
+            <span>©</span><span>2022</span>
+            <a href="https://github.com/EveryBarry" class="footer__link-gh" target="_blank">GitHub</a>
+        </div>
+        <div class="footer__rs">
+            <a href="https://rs.school/js-stage0/" target="blank"><img class="rsschool__logo"
+                    src="https://rs.school/images/rs_school_js.svg" alt="RSSchool logo"></a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

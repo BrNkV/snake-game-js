@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    border: 1px solid white;
+}
+
+.options {
+    width: 400px;
+}
+
+.score-view {
+    width: 400px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+.score {
+    width: 50%;
+    text-align: center;
+}
+
+.speed,
+.color {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.speed-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.color-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.color-value {
+    width: 50%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.speed-value {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.start-game {
+    font-family: 'Montserrat', sans-serif;
+    width: 20%;
+    height: 50%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reset-game {
+    font-family: 'Montserrat', sans-serif;
+    width: 20%;
+    height: 50%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.start-game:hover {
+    color: white;
+    background-color: black;
+}
+
+.reset-game:hover {
+    color: white;
+    background-color: black;
+}
+
+.game-box {
+    display: flex;
+    gap: 5%;
+    border: 1px solid white;
+}
+
+.top-score {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+}
+
+.footer {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    height: 5vh;
+    background-color: #000000;
+    margin: 0 auto;
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        width: 250pt;
+        height: 10vh;
+    }
+}
+
+.footer__github {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: 50%;
+    color: #FFFFFF;
+    align-self: center;
+    justify-self: center;
+}
+
+.footer__github a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__rs {
+    align-self: center;
+    justify-self: center;
+    height: 80%;
+}
+
+.footer__rs a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.rsschool__logo {
+    height: 100%;
+    background-color: #FFFFFF;
+}
