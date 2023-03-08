@@ -5,4 +5,4 @@ RS school project snake-game-js
 реализация игры на выбор
 
 ## view link
-https://everybarry.github.io/snake-game-js/
+https://brnkv.github.io/snake-game-js/
